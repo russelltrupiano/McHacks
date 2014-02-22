@@ -11,11 +11,12 @@ $(document).ready(function(){
     // var URL = $('#URL-input').val();
     if (URL != ''){
       // alert('Worked');
+      // chrome.runtime.sendMessage({create_new_window: true, scurl: URL}, function(response){
+        // console.log(URL);
+      // });
+      GenerateWindow();
       $('#URL-input').val('');
     }
-    // alert("didn't work");
-    
-    // window.close();
   });
 
   $('#URL-input').keydown(function(e){
@@ -23,6 +24,8 @@ $(document).ready(function(){
       $('#open-PIP-btn').click();
     }
   });
+
+
 
 });
 

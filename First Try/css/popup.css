@@ -13,3 +13,11 @@ body {
 #input-detail {
   font-weight: bold;
 }
+
+.PIP-Window {
+  width: 600px;
+  height: 400px;
+  background-color: black;
+  border-radius: 5px;
+  opacity: .8;
+}
