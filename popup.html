@@ -1,21 +1,12 @@
 <!doctype html>
 <html>
   <head>
-    <title>Getting Started Extension's Popup</title>
-    <style>
-      body {
-        min-width: 357px;
-        overflow-x: hidden;
-      }
-
-      img {
-        margin: 5px;
-        border: 2px solid black;
-        vertical-align: middle;
-        width: 75px;
-        height: 75px;
-      }
-    </style>
+    <title></title>
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
     <!--
       - JavaScript and HTML must be in separate files: see our Content Security
@@ -23,9 +14,37 @@
       -
       - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
      -->
-    <script src="popup.js"></script>
+    
   </head>
   <body>
+<!-- 
+    <script>
+      function loadPIP(){
+        window.close();
+        alert("Ran");
+      }
+    </script>
+
+ --><!--     <form id="new-window-form" onsubmit=window.close();>
+      URL to Open:
+      <input id="URL-input" type="text" value=' ' class="form-control" required>
+      <button id="open-PIP-btn" type="submit" class="btn btn-warning">Open PIP Window</button> 
+      <script>
+        document.getElementById("URL-input").value = window.location.href;
+        alert(document.getElementById("URL-input").value);
+      </script>
+    </form> -->
+
+
+
+    <table>
+      <tbody> 
+        <tr><p id="input-detail">Open URL in PIP Window:</p></tr>
+        <tr><input type="text" id="URL-input" class="form-control" value="" required></tr>
+        <tr><button id="open-PIP-btn" class="btn btn-warning fill-width-btn">Open URL in PIP Window</button></tr>
+      </tbody>
+    </table>
+
   </body>
 </html>
 
