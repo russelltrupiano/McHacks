@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+
+	"name": "PIP-Web",
+
+	"description": "This extension allows another webpage to be pinned to the screen while other screens are at full size.",
+
+	"version": "0.1",
+
+	"permissions":[
+		"tabs",
+		"background"
+	],
+
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+
+	"background": {
+		"page": "background.html"
+	}
+}
